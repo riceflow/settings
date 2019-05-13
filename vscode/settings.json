@@ -1,0 +1,63 @@
+{
+    /* Vim */
+    // システムのclipboardにコピー
+    "vim.useSystemClipboard":true,
+
+    // 検索結果のハイライト(:nohで直近の結果をOFF)
+    "vim.hlsearch": true,
+
+    // Easymotionを有効
+    // "vim.easymotion": true,
+
+    // カーソル上にあるワードを"*"で検索
+    "vim.visualstar": true,
+
+    // 諸々のctrlキーを使った操作が有効になる
+    "vim.useCtrlKeys": true,
+
+    /* Edit with Shell Command */
+    //Gitのbashを利用する様に指定
+    "editWithShell.shell.windows": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+
+    //デフォルトではDOSプロンプト用オプションなので、Git用に変更
+    "editWithShell.shellArgs.windows": [
+        "-c"
+    ],
+
+    //テキストを選択していない場合は現ファイルを実行対象に設定
+    "editWithShell.processEntireTextIfNoneSelected": true,
+
+    /* Editor */
+    // コードの一行が長くなるための可読性向上
+    "editor.wordWrap": "on",
+
+    // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
+    "editor.renderWhitespace": "boundary",
+
+    //制御文字の表示
+    "editor.renderControlCharacters": true,
+
+    /* Git */
+    // 自動フェッチの有効化
+    "git.autofetch": true,
+
+    /* Terminal */
+    //実行コマンドをGitのbashを利用
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    //ターミナルで選択したテキストを自動コピー
+    // "terminal.integrated.copyOnSelection": true,
+
+    /* Debug */
+    // デバッグ中にエディターの行内に変数値を表示します
+    "debug.inlineValues": true,
+
+    /* other */
+    //エディターで開くパンくずの設定
+    "breadcrumbs.enabled": true,
+
+    // 有効な場合、ファイルを開くときに文字セット エンコードを推測します。言語ごとに構成することも可能
+    "files.autoGuessEncoding": true,
+
+    "workbench.iconTheme": "vscode-icons"
+}

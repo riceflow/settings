@@ -206,13 +206,17 @@ set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
 
 " quickrunでPrevimOpenを起動させる様に関連づけ
 let g:quickrun_config = {
-      \ 'markdown': {
-      \   'runner': 'shell',
-      \   'outputter': 'null',
-      \   'command': ':PrevimOpen',
-      \   'exec': '%c',
-      \ },
-      \ }
+    \ 'markdown': {
+    \   'runner': 'shell',
+    \   'outputter': 'null',
+    \   'command': ':PrevimOpen',
+    \   'exec': '%c',
+    \ },
+    \ }
+
+" QuickRun and view compile result quickly
+nnoremap <silent> <F5> :QuickRun -type markdown<CR>
+vnoremap <silent> <F5> :QuickRun -type markdown/visual<CR>
 
 " マークダウン関連のファイルの関連付け
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown

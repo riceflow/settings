@@ -194,6 +194,22 @@ set undodir=C:\temp\backup\vi
 set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
 
 "---------------------------------------------------------------------------
+" ## 文章内部の記述
+
+" タブのシフトは4文字分
+:set tabstop=4
+
+" 読み込み時のシフトも4文字分
+:set shiftwidth=4
+
+" タブは半角文字で実施
+:set expandtab
+
+" 参考サイト："Vim 設定ガイド".Qiita@marrontan619
+" <https://qiita.com/marrontan619/items/541a1374e1ac672977e6>
+
+
+"---------------------------------------------------------------------------
 " ## 文字コード関連
 
 " Vim内部の文字コード

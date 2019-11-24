@@ -233,9 +233,19 @@ set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
 "---------------------------------------------------------------------------
 " ## quickrun
 
-" quickrunでPrevimOpenを起動させる様に関連づけ
+" quickrunでmarkdownを閲覧する場合にPrevimOpenを起動させる様に関連づけ
 let g:quickrun_config = {
     \ 'markdown': {
+    \   'runner': 'shell',
+    \   'outputter': 'null',
+    \   'command': ':PrevimOpen',
+    \   'exec': '%c',
+    \ },
+    \ }
+
+" quickrunでasciidocを閲覧する場合にPrevimOpenを起動させる様に関連づけ
+let g:quickrun_config = {
+    \ 'asciidoc': {
     \   'runner': 'shell',
     \   'outputter': 'null',
     \   'command': ':PrevimOpen',
@@ -247,8 +257,9 @@ let g:quickrun_config = {
 nnoremap <silent> <F5> :QuickRun -type markdown<CR>
 vnoremap <silent> <F5> :QuickRun -type markdown/visual<CR>
 
-" マークダウン関連のファイルの関連付け
+" 拡張子とファイルタイプの関連付け
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+autocmd BufNewFile,BufRead *.{asciidoc,adoc,asc} set filetype=asciidoc
 
 " プレビューする際のブラウザ指定
 let g:previm_open_cmd = 'C:\\Program\ Files\ (x86)\\Google\\Chrome\\Application\\chrome.exe'

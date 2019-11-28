@@ -233,7 +233,7 @@ set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
 "---------------------------------------------------------------------------
 " ## quickrun
 
-" quickrunでmarkdownを閲覧する場合にPrevimOpenを起動させる様に関連づけ
+" quickrunでPrevimOpenを起動させる様に関連づけ(markdown, AsciiDoc)
 let g:quickrun_config = {
     \ 'markdown': {
     \   'runner': 'shell',
@@ -241,10 +241,6 @@ let g:quickrun_config = {
     \   'command': ':PrevimOpen',
     \   'exec': '%c',
     \ },
-    \ }
-
-" quickrunでasciidocを閲覧する場合にPrevimOpenを起動させる様に関連づけ
-let g:quickrun_config = {
     \ 'asciidoc': {
     \   'runner': 'shell',
     \   'outputter': 'null',

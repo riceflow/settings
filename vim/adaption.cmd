@@ -1,2 +1,2 @@
-copy .\gvimrc "C:\Program Files\vim81-kaoriya-win64\gvimrc"
+copy .\gvimrc "C:\Program Files\vim82-kaoriya-win64\gvimrc"
 pause

@@ -1,1 +1,1 @@
-copy "C:\Program Files\vim81-kaoriya-win64\gvimrc" .\gvimrc
+copy "C:\Program Files\vim82-kaoriya-win64\gvimrc" .\gvimrc

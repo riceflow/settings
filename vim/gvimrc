@@ -63,7 +63,8 @@ endif
 
 "---------------------------------------------------------------------------
 " カラー設定:
-colorscheme morning
+" colorscheme morning
+colorscheme murphy
 
 " 端末モード関連の色設定
 highlight Terminal guifg=lightgrey guibg=grey20
@@ -210,6 +211,13 @@ set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
 
 " タブは半角文字で実施
 :set expandtab
+
+" ファイルタイプに基づいたインデントの有効化
+filetype plugin indent on 
+
+" シンタックスハイライトの有効化
+syntax on
+
 
 " 参考サイト："Vim 設定ガイド".Qiita@marrontan619
 " <https://qiita.com/marrontan619/items/541a1374e1ac672977e6>

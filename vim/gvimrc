@@ -206,6 +206,19 @@ set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
 " ツールバーの非表示
 :set guioptions-=T
 
+" 折りたたむ
+" 他のモード(See. マスタリングVim P68)
+"  manual:手動折りたたみ
+"  expr:Vimの式利用
+"  marker:特別なマークアップ、あまり利用しない
+"  syntax:構文ベース
+"  diff:差分モード
+:set foldmethod=indent
+
+" 折りたたんで際にN行見せる
+:set foldcolumn=1
+
+
 "---------------------------------------------------------------------------
 " ## 文章内部の記述
 

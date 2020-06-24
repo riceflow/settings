@@ -64,7 +64,7 @@ endif
 "---------------------------------------------------------------------------
 " カラー設定:
 " colorscheme morning
-colorscheme murphy
+colorscheme slate
 
 " 端末モード関連の色設定
 highlight Terminal guifg=lightgrey guibg=grey20
@@ -104,8 +104,6 @@ set columns=80
 set lines=25
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
-" 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
-"colorscheme evening " (GUI使用時)
 
 "---------------------------------------------------------------------------
 " 日本語入力に関する設定:

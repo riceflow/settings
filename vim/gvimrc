@@ -189,6 +189,9 @@ endif
 " シェルをCygwinのbash(将来的にはWSLに置換)
 set shell=C:\\cygwin64\\bin\\bash
 
+" 常にステータスラインを表示(最近はデフォルト2っぽいので指定不要だが、airline使うため明示的に定義しておく)
+set laststatus=2
+
 "---------------------------------------------------------------------------
 " ## バックアップ関連
 
@@ -208,7 +211,7 @@ set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
 " ## GUI関連
 
 " ツールバーの非表示
-:set guioptions-=T
+set guioptions-=T
 
 " 折りたたむ
 " 他のモード(See. マスタリングVim P68)

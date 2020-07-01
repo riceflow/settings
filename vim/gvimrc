@@ -187,7 +187,8 @@ endif
 " ## システム全体
 
 " シェルをCygwinのbash(将来的にはWSLに置換)
-set shell=C:\\cygwin64\\bin\\bash
+" OpenVimが動かなくなるため、一旦戻す
+" set shell=C:\\cygwin64\\bin\\bash
 
 " 常にステータスラインを表示(最近はデフォルト2っぽいので指定不要だが、airline使うため明示的に定義しておく)
 set laststatus=2

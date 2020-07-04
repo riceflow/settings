@@ -299,6 +299,7 @@ autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 autocmd BufNewFile,BufRead *.{asciidoc,adoc,asc} set filetype=asciidoc
 
 " プレビューする際のブラウザ指定
+" 注意：Chromeを指定する場合は、Chromeを開いた状態で使わないとVimが編集できなくなる
 let g:previm_open_cmd = 'C:\\Program\ Files\ (x86)\\Google\\Chrome\\Application\\chrome.exe'
 
 "---------------------------------------------------------------------------

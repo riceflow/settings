@@ -269,7 +269,14 @@ syntax on
 :set guioptions+=a
 
 " 無名レジスタに入るデータを、*レジスタにも入れる。
-:set clipboard+=unnamed
+" これを設定するとビジュアルモードのペーストが上手く動かないため設定やめる
+":set clipboard+=unnamed
+:set clipboard=
+
+
+" 無名レジスタにクリップボードの値を代入
+nnoremap <silent> <F2> :let @@ = @*<CR>
+
 
 "---------------------------------------------------------------------------
 " ## quickrun

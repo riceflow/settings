@@ -193,6 +193,16 @@ endif
 " 常にステータスラインを表示(最近はデフォルト2っぽいので指定不要だが、airline使うため明示的に定義しておく)
 set laststatus=2
 
+" 開いたファイルをカレントディレクトリに変更
+set autochdir
+
+" 拡張コマンド
+set grepprg=C:\Users\inituser\AppData\Local\Fork\gitInstance\2.26.2\usr\bin\grep.exe\
+let Grep_Path = 'C:\Users\inituser\AppData\Local\Fork\gitInstance\2.26.2\usr\bin\grep.exe'
+let Grep_Find_Path = 'C:\Users\inituser\AppData\Local\Fork\gitInstance\2.26.2\usr\bin\find.exe'
+let Grep_Xargs_Path = 'C:\Users\inituser\AppData\Local\Fork\gitInstance\2.26.2\usr\bin\xargs.exe'
+let Grep_Shell_Quote_Char = '"'
+
 "---------------------------------------------------------------------------
 " ## バックアップ関連
 

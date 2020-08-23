@@ -207,16 +207,16 @@ let Grep_Shell_Quote_Char = '"'
 " ## バックアップ関連
 
 " *.swp ファイル[ファイル編集前の作業コピーでVimクラッシュ時の復旧時に使用]の出力先
-set directory=C:\\temp\backup\vi
+set directory=$MyBackupDir\vim
 
 " *~ (チルダ)ファイル[ファイル変更後に保存されるファイル編集前のバックアップ]の出力先
-set backupdir=C:\\temp\backup\vi
+set backupdir=$MyBackupDir\vim
 
 " *.un~ ファイル[Undoの情報が保存されたファイル]の出力先
-set undodir=C:\temp\backup\vi
+set undodir=$MyBackupDir\vim
 
 " .viminfo ファイル[編集、検索、履歴などの情報・設定が保存されたファイル]の出力先(ファイル名の指定も必要、\をエスケープする必要有[多分])
-set viminfo+=nC:\\temp\\backup\\vi\\viminfo.txt
+set viminfo+=n$MyBackupDir\\vim\\viminfo.txt
 
 "---------------------------------------------------------------------------
 " ## GUI関連
@@ -265,7 +265,7 @@ syntax on
 "---------------------------------------------------------------------------
 " ## 文字コード関連
 
-" Vim内部の文字コード
+" Vim内部の文字コード(Windows版はMS932のままでないと上手く動かない)
 " :set encoding=utf-8
 
 " ファイル書き込み時の文字コード

@@ -233,11 +233,16 @@ set guioptions-=T
 "  diff:差分モード
 :set foldmethod=indent
 
-" 折りたたんで際にN行見せる
+" 折りたたむ際にN行見せる
 :set foldcolumn=1
 
 " ハイライトを無効化しながら画面をクリアして再描画
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" F3キーを押すとハイライトを切り替える
+set hlsearch!
+nnoremap <F3> :set hlsearch!<CR>
+
 
 "---------------------------------------------------------------------------
 " ## 文章内部の記述

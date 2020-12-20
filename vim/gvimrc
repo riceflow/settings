@@ -95,6 +95,12 @@ elseif has('xfontset')
   endif
 endif
 
+
+" 2020.12.20 add by yone
+" フォントの設定
+:set guifont=Sarasa:h14
+
+
 "---------------------------------------------------------------------------
 " ウインドウに関する設定:
 "
@@ -350,3 +356,24 @@ highlight link ALEWarningSign StorageClass
 " Ctrl + kで次の指摘へ、Ctrl + jで前の指摘へ移動
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+"---------------------------------------------------------------------------
+" ## fern
+
+" Vim起動時にfernを開く
+augroup __fern__
+	au!
+" コマンドのフラグ
+" -drawer：drawer styleを使う
+" -stay：フォーカスを今のウィンドウに残す
+" -keep：ウィンドウを閉じない
+" -toggle：fernの表示をトグル
+" -reveal=%：現在のファイルをフォーカス
+	autocmd VimEnter * ++nested Fern . -drawer -stay -keep -toggle -reveal=%
+augroup END
+
+" アイコンの表示
+let g:fern#renderer = "nerdfont"
+
+" fernの表示/非表示をトグル
+nnoremap <F4> :<c-u>Fern . -drawer -stay -keep -toggle -reveal=%<cr>

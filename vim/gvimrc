@@ -357,16 +357,16 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " ## fern
 
 " Vim起動時にfernを開く
-augroup __fern__
-	au!
+" augroup __fern__
+"	au!
 " コマンドのフラグ
 " -drawer：drawer styleを使う
 " -stay：フォーカスを今のウィンドウに残す
 " -keep：ウィンドウを閉じない
 " -toggle：fernの表示をトグル
 " -reveal=%：現在のファイルをフォーカス
-	autocmd VimEnter * ++nested Fern . -drawer -stay -keep -toggle -reveal=%
-augroup END
+"	autocmd VimEnter * ++nested Fern . -drawer -stay -keep -toggle -reveal=%
+" augroup END
 
 " アイコンの表示
 let g:fern#renderer = "nerdfont"

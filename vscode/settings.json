@@ -9,6 +9,7 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "files.trimTrailingWhitespace": true,
+    "vim.disableExtension":true,
     "vim.leader": "<space>",
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
@@ -275,4 +276,5 @@
         },
     ],
     "workbench.colorTheme": "Abyss",
+    "security.workspace.trust.untrustedFiles": "open",
 }
